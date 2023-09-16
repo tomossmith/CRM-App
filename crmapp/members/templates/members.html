@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  147 Snooker Hall Members
+{% endblock %}
+
+
+{% block content %}
+  <h1>Members</h1>
+  
+  <ul>
+    {% for i in clubmembers %}
+      <li><a href="details/{{ i.id }}">{{ i.firstname }} {{ i.lastname }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

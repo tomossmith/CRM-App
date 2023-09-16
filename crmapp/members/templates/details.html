@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+{% block title %}
+147 Snooker Hall Member Details: {{ clubmembers.firstname }} {{ clubmembers.lastname }}
+{% endblock %}
+
+{% block content %}
+<h1>Member Details:{{ clubmembers.firstname }} {{ clubmembers.lastname }} </h1>
+<p>Phone: {{ clubmembers.phone }}</p>
+<p>Heighest Break: {{ clubmembers.heighestbreak }}</p>
+<p>Member since: {{ clubmembers.joined_date }}</p>
+
+<p>Back to <a href="/members">Members</a></p>
+{% endblock %}
